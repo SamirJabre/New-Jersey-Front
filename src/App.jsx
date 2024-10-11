@@ -1,10 +1,11 @@
 import React from 'react'
+import Home from './Pages/LandingPage/Home'
 
 function App() {
   return (
-    <div>
-      <h1>React App</h1>
-    </div>
+    <>
+    <Home/>
+    </>
   )
 }
 
