@@ -59,3 +59,16 @@
     color: #00265F;
     font-size: 1.2rem;
 }
+
+@media screen and (max-width: 1500px){
+    .navbar_content li{
+        font-size: 1rem;
+    }
+}
+
+
+@media screen and (max-width: 1300px){
+    .navbar_content li{
+        font-size: 0.8rem;
+    }
+}

@@ -3,6 +3,7 @@
     width: 2.5rem;
     border-radius: 100px;
     cursor: pointer;
+    transition: 0.3s;
 }
 .gray{
     background-color: #E3E3E3;
@@ -25,4 +26,11 @@
 #circle_icon{
     width: 60%;
     height: 60%;
+}
+
+@media screen and (max-width: 1400px){
+    .circle{
+        height: 2rem;
+        width: 2rem;
+    }
 }

@@ -12,6 +12,7 @@
     align-items: center;
     width: 10%;
     height: 100%;
+    transition: 0.3s;
 }
 #logo{
     width: 100%;
@@ -23,4 +24,12 @@
     align-items: center;
     width: 10%;
     height: 80%;
+}
+
+@media screen and (max-width: 1500px){
+    .Home_Logo{
+        width: 15%;
+        height: 80%;
+    }
+    
 }
