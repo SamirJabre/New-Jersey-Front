@@ -4,10 +4,10 @@ import search from '../../assets/icons/search.svg'
 import cart from '../../assets/icons/cart.svg'
 import profile from '../../assets/icons/profile.svg'
 
-function ContentCircle({color , logo}) {
+function ContentCircle({color , logo , onpress}) {
     const icon = logo;
   return (
-    <div className="circle">
+    <div className="circle" onClick={onpress}>
         <div className={color}>
             {
                 icon === 'search'?

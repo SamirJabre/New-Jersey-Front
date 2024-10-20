@@ -10,6 +10,7 @@ import close from '../../assets/icons/close.svg'
 function Header() {
 
   const [isSideNavVisible, setIsSideNavVisible] = useState(false);
+  const [isSearchVisible, setIsSearchVisible] = useState(false);
   const [width, setWidth] = useState(window.innerWidth);
 
 
@@ -21,6 +22,10 @@ function Header() {
   const toggleSideNav = () => {
     setIsSideNavVisible(!isSideNavVisible);
   };
+  const toggleSearch = () => {
+    console.log('clicked');
+    setIsSearchVisible(!isSearchVisible);
+  };
   
   return width > 1200 ? (
     <header className='Home_Header'>
@@ -30,8 +35,17 @@ function Header() {
 
             <Navbar/>
 
+            {isSearchVisible && (
+        <div className="search_container visible">
+          <input type="text" />
+          <button onClick={toggleSearch}><img src={close} alt='Close Search'/></button>
+        </div>
+      )}
+      
+            
+
             <div className='Home_Content'>
-              <ContentCircle color={'gray'} logo={'search'}/>
+              <ContentCircle color={'gray'} logo={'search'} onpress={toggleSearch}/>
               <ContentCircle color={'black'} logo={'cart'}/>
               <ContentCircle color={'gray'} logo={'profile'}/>
             </div>
@@ -49,8 +63,7 @@ function Header() {
         
         <div className="left_side_nav">
           <ul>
-            <li onClick={()=>{console.log('clicked');
-            }}>Categories</li>
+            <li onClick={()=>console.log('clicked')}>Categories</li>
             <li>All Products</li>
             <li>Locate Us</li>
             <li>Out Story</li>
