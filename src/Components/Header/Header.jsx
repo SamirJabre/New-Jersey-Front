@@ -3,15 +3,24 @@ import './Header.css'
 import logo from '../../assets/logo.png'
 import Navbar from '../../Components/Navbar/Navbar'
 import ContentCircle from '../../base/Content_Circle/ContentCircle'
+import search from '../../assets/icons/search.svg'
+import menu from '../../assets/icons/menu.svg'
+import close from '../../assets/icons/close.svg'
 
 function Header() {
 
+  const [isSideNavVisible, setIsSideNavVisible] = useState(false);
   const [width, setWidth] = useState(window.innerWidth);
-  console.log(width);
+
+
   useEffect(()=>{
     const handleResize = () => setWidth(window.innerWidth);
     window.addEventListener('resize', handleResize);
   },[])
+
+  const toggleSideNav = () => {
+    setIsSideNavVisible(!isSideNavVisible);
+  };
   
   return width > 1200 ? (
     <header className='Home_Header'>
@@ -29,8 +38,42 @@ function Header() {
     </header>
   ) :
   (
-    <header>
-      <h1>Hello World</h1>
+    <header className='Home_Header_2'>
+      <div className='menu'>
+        <button id='menu_btn' onClick={toggleSideNav}>
+          <img src={menu} alt='Menu Icon'/>
+        </button>
+      </div>
+
+      <div className={`side_navigation_bar ${isSideNavVisible ? 'visible' : ''}`}>
+        
+        <div className="left_side_nav">
+          <ul>
+            <li onClick={()=>{console.log('clicked');
+            }}>Categories</li>
+            <li>All Products</li>
+            <li>Locate Us</li>
+            <li>Out Story</li>
+            <li>Support</li>
+          </ul>
+        </div>
+
+
+
+        <div className="right_side_nav">
+          <button id='close_btn' onClick={toggleSideNav}>
+            <img src={close} alt='Close Icon'/>
+          </button>
+          </div>
+      </div>
+
+      <div className="search_bar_2">
+        <input type="text" placeholder="Search for products, brands and more" id="search_2"/>
+        <button id='search_btn_2'><img src={search} alt="Search Icon"/></button>
+      </div>
+      <div className='Home_Content_2'>
+        <ContentCircle color={'black'} logo={'cart'}/>
+      </div>
     </header>
   )
 
