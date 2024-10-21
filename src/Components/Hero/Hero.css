@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+.hero_section_container{
+    display: flex;
+    height: 45%;
+    width: 100%;
+    margin-top: 15px;
+}
+
+.hero_section_left{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+}
+.hero_section_left h1{
+    font-size: 2.5rem;
+    font-weight: 500;
+    color: black;
+    font-family: "Anton", sans-serif;
+}
+.hero_section_left p{
+    font-family: 'Inter', sans-serif;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: black;
+    margin: 20px;
+}
+.cta_buttons{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 40%;
+    height: 12%;
+}
+.cta_buttons :nth-child(1){
+    height: 100%;
+    width: 40%;
+    background-color: black;
+    color: white;
+    font-family: 'Inter', sans-serif;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+}
+.cta_buttons :nth-child(2){
+    height: 100%;
+    width: 40%;
+    background-color: white;
+    color: black;
+    border: 3px solid black;
+    font-family: 'Inter', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 800;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.hero_section_right{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 35%;
+    height: 100%;
+}
+.slideshow{
+    width: 100%;
+    height: 93%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.slideshow img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+}
+.images_order{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 7%;
+    width: 50%;
+}
+.order{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: gray;
+    cursor: pointer;
+}
+.focused_image{
+    background-color: black;
+}
