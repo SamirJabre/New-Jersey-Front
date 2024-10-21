@@ -1,12 +1,14 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import './Navbar.css'
 import add from '../../assets/icons/add.svg'
 
-function Navbar() {
+function Navbar({onpress}) {
+
+
   return (
     <nav className='Home_Nav'>
 
-                <div className='category_container'>
+                <div onClick={onpress} className='category_container'>
                     <p>Category</p>
                     <div className='category_dropdown'>
                     <img src={add} alt='show-categories' id='category_dropdown'/>

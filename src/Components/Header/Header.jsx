@@ -6,11 +6,13 @@ import ContentCircle from '../../base/Content_Circle/ContentCircle'
 import search from '../../assets/icons/search.svg'
 import menu from '../../assets/icons/menu.svg'
 import close from '../../assets/icons/close.svg'
+import forward from '../../assets/icons/forward.svg'
 
 function Header() {
 
   const [isSideNavVisible, setIsSideNavVisible] = useState(false);
   const [isSearchVisible, setIsSearchVisible] = useState(false);
+  const [isCatergoriesVisible, setIsCatergoriesVisible] = useState(false);
   const [width, setWidth] = useState(window.innerWidth);
 
 
@@ -23,8 +25,10 @@ function Header() {
     setIsSideNavVisible(!isSideNavVisible);
   };
   const toggleSearch = () => {
-    console.log('clicked');
     setIsSearchVisible(!isSearchVisible);
+  };
+  const toggleCategories = () => {
+    setIsCatergoriesVisible(!isCatergoriesVisible);
   };
   
   return width > 1200 ? (
@@ -33,7 +37,19 @@ function Header() {
                 <img src={logo} alt='logo' id='logo'/>
             </div>
 
-            <Navbar/>
+            <Navbar onpress={toggleCategories}/>
+
+            {isCatergoriesVisible && 
+            <div className="categories_container visible">
+              <ul>
+                <li><button>Football Jerseys</button><div className="forward_img"><img src={forward} alt="Forward Icon" /></div></li>
+                <li><button>Football Balls</button><div className="forward_img"><img src={forward} alt="Forward Icon" /></div></li>
+                <li><button>Football Accessories</button><div className="forward_img"><img src={forward} alt="Forward Icon" /></div></li>
+              </ul>
+            </div>
+            }
+
+
 
             {isSearchVisible && (
         <div className="search_container visible">
