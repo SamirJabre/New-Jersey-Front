@@ -7,6 +7,12 @@ import three from '../../Assets/3.png'
 function hero() {
     const [current, setCurrent] = useState(one)
     const slideshow=[one, two, three]
+    const [width, setWidth] = useState(window.innerWidth);
+
+    useEffect(()=>{
+        const handleResize = () => setWidth(window.innerWidth);
+        window.addEventListener('resize', handleResize);
+      },[])
 
     useEffect(()=>{
         let i=0
@@ -19,7 +25,7 @@ function hero() {
         }, 3000)
     },[])
 
-  return (
+  return width > 1100 ? (
     <div className='hero_section_container'>
         <div className="hero_section_left">
             <h1 >Your One-Stop Shop for Premium</h1>
@@ -42,6 +48,19 @@ function hero() {
             </div>
 
         </div> 
+    </div>
+  ) : 
+  (
+    <div className='hero_section_container'>
+        <div className="hero_section_left">
+            <h1 >Your One-Stop Shop for Premium</h1>
+            <h1>Football Jerseys and Boots</h1>
+            <p>Get Started</p>
+            <div className="cta_buttons">
+                <button>LOG IN</button>
+                <button>SIGN UP</button>
+            </div>
+        </div>
     </div>
   )
 }
