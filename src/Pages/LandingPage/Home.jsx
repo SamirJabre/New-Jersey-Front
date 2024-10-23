@@ -4,6 +4,7 @@ import Header from '../../Components/Header/Header'
 import Hero from '../../Components/Hero/Hero'
 import Filter from '../../Components/Filter/Filter'
 import Product from '../../Components/Product/Product'
+import Footer from '../../Components/Footer/Footer'
 
 function Home() {
   return (
@@ -12,6 +13,7 @@ function Home() {
         <Hero/>
         <Filter/>
         <Product/>
+        <Footer/>
     </div>
   )
 }
