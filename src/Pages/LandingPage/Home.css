@@ -5,6 +5,11 @@
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    height: 100vh;
+    height: 200vh;
+    width: 100%;
     background-color: #FFFFFF;
+}
+.Product_Container{
+    width: 100vw;
+    background-color: aqua;
 }

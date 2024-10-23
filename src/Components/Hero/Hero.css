@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
 .hero_section_container{
     display: flex;
-    height: 45%;
+    height: 45vh;
     width: 100%;
     margin-top: 15px;
 }

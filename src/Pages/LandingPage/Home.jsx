@@ -3,6 +3,7 @@ import './Home.css'
 import Header from '../../Components/Header/Header'
 import Hero from '../../Components/Hero/Hero'
 import Filter from '../../Components/Filter/Filter'
+import Product from '../../Components/Product/Product'
 
 function Home() {
   return (
@@ -10,6 +11,7 @@ function Home() {
         <Header/>
         <Hero/>
         <Filter/>
+        <Product/>
     </div>
   )
 }
