@@ -14,7 +14,8 @@
   }
 
   .card_container:hover{
-    border: 1px solid black;
+    border: 1px solid gray;
+    padding: 10px;
   }
 
   .product_image_container{

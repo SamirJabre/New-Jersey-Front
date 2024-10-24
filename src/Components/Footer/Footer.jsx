@@ -43,10 +43,10 @@ function Footer() {
       <div className="footer_bottom">
 
         <div className="footer_logos">
-          <img src={facebook} alt="Facebook Icon" />
-          <img src={instagram} alt="Instagram Icon" />
-          <img src={x} alt="X Icon" />
-          <img src={youtube} alt="Youtube Icon" />
+          <div><img src={facebook} alt="Facebook Icon" /></div>
+          <div><img src={instagram} alt="Instagram Icon" /></div>
+          <div><img src={x} alt="X Icon" /></div>
+          <div><img src={youtube} alt="Youtube Icon" /></div>
         </div>
 
         <div className="copywrite_text">
