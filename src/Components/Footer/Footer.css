@@ -84,3 +84,73 @@
     font-weight: 200;
     color: white;
 }
+@media screen and (max-width: 1650px){
+    .footer_top div{
+        width: 20%;
+    }
+}
+
+@media screen and (max-width: 1300px){
+    .footer_top div{
+        width: 15%;
+    }
+    #footer_logo{
+        height: 100%;
+        width: 100%;
+        object-fit: contain;
+    }
+    .footer_top div ul li{
+        font-family: 'Inter', sans-serif;
+        font-size: 0.9rem;
+        font-weight: 200;
+        cursor: pointer;
+        transition: all 0.3s ease;
+    }
+}
+
+@media screen and (max-width: 1150px){
+    .footer_top div ul li{
+        font-family: 'Inter', sans-serif;
+        font-size: 0.8rem;
+        font-weight: 200;
+        cursor: pointer;
+        transition: all 0.3s ease;
+    }
+}
+@media screen and (max-width: 1000px){
+    .footer_top div ul li{
+        font-family: 'Inter', sans-serif;
+        font-size: 0.7rem;
+        font-weight: 200;
+        cursor: pointer;
+        transition: all 0.3s ease;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .footer_top div{
+        width: 25%;
+    }
+    .footer_top{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 3%;
+        height: 50%;
+        width: 100%;
+    }
+    .footer_middle{
+        width: 90%;
+        padding: 0 3%;
+    }
+    .footer_top div ul li{
+        font-family: 'Inter', sans-serif;
+        font-size: 0.6rem;
+        font-weight: 200;
+        cursor: pointer;
+        transition: all 0.3s ease;
+    }
+    .footer_bottom{
+        
+    }
+}

@@ -33,7 +33,7 @@ function Footer() {
           <ul>
             <li>SUPPORT</li>
             <li>CONTACT US</li>
-            <li>CHUPAPI MUNANIO</li>
+            <li>CHUPAPI</li>
           </ul>
         </div>
       </div>
