@@ -74,6 +74,10 @@
     width: 20%;
     height: 50%;
 }
+.footer_logos img{
+    object-fit: cover;
+    cursor: pointer;
+}
 .copywrite_text{
     font-family: 'Inter', sans-serif;
     font-size: 0.8rem;
