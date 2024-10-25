@@ -65,12 +65,100 @@
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    margin: 30px 0px;
+    margin: 10% 0;
 }
 .names{
-    height: 25%;
+    height: 45px;
     width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+.terms_conditions{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    height: 4%;
+}
+#terms_checkbox{
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+.terms_conditions p{
+    font-family: 'Inter', sans-serif;
+    font-size: 0.8rem;
+    font-weight: 250;
+    color: white;
+    margin-left: 10px;
+}
+#create_account_btn{
+    font-family: 'Inter', sans-serif;
+    font-size: 1rem;
+    font-weight: 300;
+    color: white;
+    width: 100%;
+    height: 45px;
+    text-align: center;
+    border: none;
+    background-color: black;
+    border-radius: 3px;
+    cursor: pointer;
+    margin: 10% 0;
+}
+.other_methods{
+    width: 100%;
+    height: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.other_methods div{
+    background-color: #7D7D7D;
+    width: 33%;
+    height: 1px;
+}
+.other_methods p{
+    font-family: 'Inter', sans-serif;
+    font-size: 0.7rem;
+    font-weight: 350;
+    color: #7D7D7D;
+    margin: 0 10px;
+}
+.social_media{
+    width: 100%;
+    height: 45px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10% 0;
+}
+.google, .apple{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color:transparent;
+    border: 1px solid white;
+    color: white;
+    width: 47%;
+    height: 100%;
+    border-radius: 3px;
+    cursor: pointer;
+    padding: 0 11%;
+}
+.google_logo, .apple_logo{
+    height: 20px;
+    width: 20px;
+}
+.google_logo img, .apple_logo img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.google p, .apple p{
+    color: white;
+    font-family: 'Inter', sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
 }
