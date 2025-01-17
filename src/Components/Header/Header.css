@@ -1,4 +1,4 @@
-*{
+/* *{
     user-select: none;
 }
 .Home_Header{
@@ -37,7 +37,6 @@
     padding: 15px;
 }
 
-/* Responsive adjustments */
 @media (max-width: 1500px) {
     .categories_container {
         top: 60px;
@@ -373,4 +372,4 @@
   .right_side_nav button img{
     width: 100%;
     height: 100%;
-  }
+  } */

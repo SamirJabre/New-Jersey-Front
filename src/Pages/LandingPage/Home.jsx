@@ -10,12 +10,12 @@ import Login from '../../Components/Login/Login'
 function Home() {
   return (
     <div className='Home_Container'>
-        <Login/>
+        {/* <Login/> */}
         <Header/>
-        <Hero/>
+        {/* <Hero/>
         <Filter/>
         <Product/>
-        <Footer/>
+        <Footer/> */}
     </div>
   )
 }
