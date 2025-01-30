@@ -31,9 +31,28 @@ function Header() {
 
   return (
     <header className="w-screen h-16 px-3 flex justify-between items-center">
-        <button className="w-8 h-8" onClick={toggleSideNav}>
-          <img src={menu} alt="Menu Icon" className="w-full h-full" />
-        </button>
+      <button className="w-8 h-8" onClick={toggleSideNav}>
+        <img src={menu} alt="Menu Icon" className="w-full h-full" />
+      </button>
+
+      <div
+        className={`${
+          isSideNavVisible
+            ? "h-screen w-full bg-red-500 fixed top-0 left-0 flex justify-between items-center"
+            : "hidden"
+        } `}
+      >
+        <div className="h-full w-1/2 bg-blue-500">
+        
+        </div>
+
+
+
+        <div className="h-full w-1/2 bg-yellow-500">
+        </div>
+
+
+        </div>
 
       <div className="w-4/6 h-8 flex justify-between items-center rounded-full border border-black">
         <input
@@ -45,7 +64,6 @@ function Header() {
           <img src={search} alt="Search Icon" />
         </button>
       </div>
-
 
       <div className="w-8 h-8">
         <ContentCircle color={"black"} logo={"cart"} />
