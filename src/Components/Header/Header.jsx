@@ -30,26 +30,24 @@ function Header() {
   };
 
   return (
-    <header className="w-full h-16 bg-pink-500 px-5 flex justify-between items-center">
-      <div className="bg-gray-600 w-8 h-8">
-        <button className="w-full h-full" onClick={toggleSideNav}>
+    <header className="w-screen h-16 px-3 flex justify-between items-center">
+        <button className="w-8 h-8" onClick={toggleSideNav}>
           <img src={menu} alt="Menu Icon" className="w-full h-full" />
         </button>
-      </div>
 
-      <div className="bg-green-500 w-3/4 h-8 flex flex-row justify-between items-center rounded-full">
+      <div className="w-4/6 h-8 flex justify-between items-center rounded-full border border-black">
         <input
           type="text"
-          placeholder="Search for products, brands and more"
-          className="w-11/12 h-full p-2 text-sm rounded-full"
+          placeholder="Search for products and more"
+          className="w-11/12 h-full px-2 text-xs rounded-l-full outline-none"
         />
-        <button className="w-1/12 h-full">
+        <button className="w-2/12 h-full flex justify-center items-center">
           <img src={search} alt="Search Icon" />
         </button>
       </div>
 
 
-      <div className="Home_Content_2">
+      <div className="w-8 h-8">
         <ContentCircle color={"black"} logo={"cart"} />
       </div>
     </header>

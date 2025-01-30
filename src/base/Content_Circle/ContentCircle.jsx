@@ -5,20 +5,10 @@ import cart from '../../assets/icons/cart.svg'
 import profile from '../../assets/icons/profile.svg'
 
 function ContentCircle({color , logo , onpress}) {
-    const icon = logo;
   return (
-    <div className="circle" onClick={onpress}>
-        <div className={color}>
-            {
-                icon === 'search'?
-                <img id='circle_icon' src={search} alt='Cirlce Icon'/>
-                :icon === 'cart'?
-                <img id='circle_icon' src={cart} alt='Cirlce Icon'/>
-                :
-                <img id='circle_icon' src={profile} alt='Cirlce Icon'/>
-            }
-        </div>
-    </div>
+    <button className={`h-full w-full rounded-full cursor-pointer flex justify-center items-center ${color === 'black' ? 'bg-[#1E1E1E]' : 'bg-[#E3E3E3]'} `} onClick={onpress}>
+            <img src={logo === 'cart' ? cart : logo === 'search' ? search : profile} alt="logo" className='w-[60%] h-[60%]'/>
+    </button>
   )
 }
 
