@@ -38,17 +38,17 @@ function Header() {
       <div
         className={`${
           isSideNavVisible
-            ? "h-screen w-full bg-red-500 fixed top-0 left-0 flex justify-between items-center"
+            ? "h-screen w-full fixed top-0 left-0 flex justify-between items-center"
             : "hidden"
         } `}
       >
-        <div className="h-full w-1/2 bg-blue-500">
+        <div className="h-full w-1/2 bg-black">
         
         </div>
 
 
 
-        <div className="h-full w-1/2 bg-yellow-500">
+        <div className="h-full w-1/2 bg-black opacity-50" onClick={()=>setIsSideNavVisible(false)}>
         </div>
 
 
