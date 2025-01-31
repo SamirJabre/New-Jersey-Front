@@ -42,17 +42,25 @@ function Header() {
             : "hidden"
         } `}
       >
-        <div className="h-full w-1/2 bg-black">
-        
+        <div className="h-full w-3/5 bg-black flex flex-col justify-start items-center p-5">
+          <div className="w-full h-10 flex items-center justify-end">
+            <button className="h-10 w-10" onClick={()=>setIsSideNavVisible(false)}>
+              <img src={close} alt="close icon" className="w-full h-full"/>
+            </button>
+          </div>
+          <ul className="w-full h-1/2 flex flex-col justify-between py-5 items-center">
+            <li className="w-full h-10 border-b text-white font-semibold text-lg text-center">Categories</li>
+            <li className="w-full h-10 border-b text-white font-semibold text-lg text-center">All Products</li>
+            <li className="w-full h-10 border-b text-white font-semibold text-lg text-center">Locate Us</li>
+            <li className="w-full h-10 border-b text-white font-semibold text-lg text-center">Our Story</li>
+            <li className="w-full h-10 border-b text-white font-semibold text-lg text-center">Support</li>
+          </ul>
         </div>
-
-
-
-        <div className="h-full w-1/2 bg-black opacity-50" onClick={()=>setIsSideNavVisible(false)}>
-        </div>
-
-
-        </div>
+        <div
+          className="h-full w-2/5 bg-black opacity-50"
+          onClick={() => setIsSideNavVisible(false)}
+        ></div>
+      </div>
 
       <div className="w-4/6 h-8 flex justify-between items-center rounded-full border border-black">
         <input

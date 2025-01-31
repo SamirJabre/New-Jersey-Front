@@ -1,3 +1,21 @@
+.side_navigation_bar {
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 60%;
+    height: 100%;
+    background-color: black;
+    opacity: 0.9;
+    transition: left 0.3s ease;
+    z-index: 1000;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .side_navigation_bar.visible {
+    left: 0;
+  }
 /* *{
     user-select: none;
 }
