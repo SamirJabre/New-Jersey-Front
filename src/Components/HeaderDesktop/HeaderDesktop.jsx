@@ -10,7 +10,7 @@ function HeaderDesktop() {
 
       <div className="w-3/5 h-10 bg-[#E3E3E3] rounded-full p-1 flex justify-between items-center font-inter sm:text-xs md:text-sm xl:text-base 2xl:text-lg relative">
         <select className="h-full w-2/5 bg-white rounded-full flex justify-between items-center px-1 hover:cursor-pointer outline-none">
-          <option value="" disabled selected className="text-gray-400">Categories</option>
+          <option value="Categories" className="text-gray-400">Categories</option>
           <option value="All">All</option>
           <option value="football_jerseys">Football Jerseys</option>
           <option value="basketball_jerseys">Basketball Jerseys</option>
@@ -40,17 +40,14 @@ function HeaderDesktop() {
         <ContentCircle
           logo={"search"}
           color={"gray"}
-          onPressAction={() => console.log("Search")}
         />
         <ContentCircle
           logo={"cart"}
           color={"black"}
-          onPressAction={() => console.log("Cart")}
         />
         <ContentCircle
           logo={"Profile"}
           color={"gray"}
-          onPressAction={() => console.log("Profile")}
         />
       </div>
     </header>
