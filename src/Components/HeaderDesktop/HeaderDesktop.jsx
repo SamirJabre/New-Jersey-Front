@@ -1,7 +1,16 @@
+import { useState } from "react";
 import logo from "../../assets/logo.png";
 import ContentCircle from "../../base/Content_Circle/ContentCircle";
 
 function HeaderDesktop() {
+
+  const [isSearchVisible, setIsSearchVisible] = useState(false);
+
+  const handleSearch = () => {
+    setIsSearchVisible(!isSearchVisible);
+    
+  }
+
   return (
     <header className="w-full h-24 px-10 flex items-center justify-between">
       <div className="h-full w-[15%]">
@@ -40,6 +49,7 @@ function HeaderDesktop() {
         <ContentCircle
           logo={"search"}
           color={"gray"}
+          onPressAction={handleSearch}
         />
         <ContentCircle
           logo={"cart"}
@@ -50,6 +60,20 @@ function HeaderDesktop() {
           color={"gray"}
         />
       </div>
+
+      {isSearchVisible && (
+        <div className="h-screen w-screen fixed top-0 left-0 flex justify-center items-start pt-24">
+        <input
+          type="text"
+          placeholder="Search for products"
+          className="w-2/5 h-12 rounded-full px-5 z-50 font-inter md:text-xs lg:text-sm xl:text-base 2xl:text-lg outline-none"
+        />
+          <div className="fixed inset-0 bg-black bg-opacity-50 z-40" onClick={handleSearch}></div>
+        </div>
+      )
+      }
+
+
     </header>
   );
 }
