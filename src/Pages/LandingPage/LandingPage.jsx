@@ -4,8 +4,8 @@ import Filter from "../../Components/Filter/Filter";
 import Product from "../../Components/Product/Product";
 import Footer from "../../Components/Footer/Footer";
 import Login from "../../Components/Login/Login";
-import HeaderMobile from "../../Components/HeaderMobile/HeaderMobile";
-import HeaderDesktop from "../../Components/HeaderDesktop/HeaderDesktop";
+import HeaderMobile from "../../Components/Header/HeaderMobile";
+import HeaderDesktop from "../../Components/Header/HeaderDesktop";
 
 function LandingPage() {
   const [width, setWidth] = useState(window.innerWidth);
