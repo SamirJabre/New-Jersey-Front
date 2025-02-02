@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Hero from "../../Components/Hero/Hero";
 import Filter from "../../Components/Filter/Filter";
 import Product from "../../Components/Product/Product";
@@ -8,17 +8,18 @@ import HeaderMobile from "../../Components/HeaderMobile/HeaderMobile";
 import HeaderDesktop from "../../Components/HeaderDesktop/HeaderDesktop";
 
 function LandingPage() {
+  const [width, setWidth] = useState(window.innerWidth);
+  useEffect(()=>{
+    window.addEventListener("resize", () => {
+      setWidth(window.innerWidth);
+    })
+  },[width])
+
+  
   return (
-    <div className="w-screen h-fit">
-      {/* <Login/> */}
-      {/* <Header /> */}
-      <HeaderDesktop/>
-      {/* <HeaderMobile /> */}
-      {/* <Hero/>
-        <Filter/>
-        <Product/>
-        <Footer/> */}
-    </div>
+    <>
+      {width < 768 ? <HeaderMobile /> : <HeaderDesktop />}
+    </>
   );
 }
 

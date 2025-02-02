@@ -3,13 +3,11 @@ import logo from "../../assets/logo.png";
 import ContentCircle from "../../base/Content_Circle/ContentCircle";
 
 function HeaderDesktop() {
-
   const [isSearchVisible, setIsSearchVisible] = useState(false);
 
   const handleSearch = () => {
     setIsSearchVisible(!isSearchVisible);
-    
-  }
+  };
 
   return (
     <header className="w-full h-24 px-10 flex items-center justify-between">
@@ -19,7 +17,9 @@ function HeaderDesktop() {
 
       <div className="w-3/5 h-10 bg-[#E3E3E3] rounded-full p-1 flex justify-between items-center font-inter sm:text-xs md:text-sm xl:text-base 2xl:text-lg relative">
         <select className="h-full w-2/5 bg-white rounded-full flex justify-between items-center px-1 hover:cursor-pointer outline-none">
-          <option value="Categories" className="text-gray-400">Categories</option>
+          <option value="Categories" className="text-gray-400">
+            Categories
+          </option>
           <option value="All">All</option>
           <option value="football_jerseys">Football Jerseys</option>
           <option value="basketball_jerseys">Basketball Jerseys</option>
@@ -27,8 +27,7 @@ function HeaderDesktop() {
           <option value="sports_equipment">Sports Equipment</option>
           <option value="accessories">Accessories</option>
         </select>
-        
-        
+
         <div className="h-full w-3/5 flex justify-around items-center">
           <a href="" className="hover:scale-105 transition-all duration-150">
             Home
@@ -51,29 +50,25 @@ function HeaderDesktop() {
           color={"gray"}
           onPressAction={handleSearch}
         />
-        <ContentCircle
-          logo={"cart"}
-          color={"black"}
-        />
-        <ContentCircle
-          logo={"Profile"}
-          color={"gray"}
-        />
+        <ContentCircle logo={"cart"} color={"black"} />
+        <ContentCircle logo={"Profile"} color={"gray"} />
       </div>
 
-      {isSearchVisible && (
-        <div className="h-screen w-screen fixed top-0 left-0 flex justify-center items-start pt-24">
+      <div
+        className={`fixed top-0 left-0 h-screen w-screen flex justify-center items-start pt-24 transition-opacity duration-300 ease-in-out ${
+          isSearchVisible ? "opacity-100" : "opacity-0 pointer-events-none"
+        }`}
+      >
         <input
           type="text"
           placeholder="Search for products"
           className="w-2/5 h-12 rounded-full px-5 z-50 font-inter md:text-xs lg:text-sm xl:text-base 2xl:text-lg outline-none"
         />
-          <div className="fixed inset-0 bg-black bg-opacity-50 z-40" onClick={handleSearch}></div>
-        </div>
-      )
-      }
-
-
+        <div
+          className="fixed inset-0 bg-black bg-opacity-50 z-40"
+          onClick={handleSearch}
+        ></div>
+      </div>
     </header>
   );
 }
