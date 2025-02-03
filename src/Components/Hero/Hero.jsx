@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
-import "./hero.css";
 import one from "../../Assets/1.jpg";
 import two from "../../Assets/2.jpg";
 import three from "../../Assets/3.png";
+import "./Hero.css";
 
 function hero() {
   const [current, setCurrent] = useState(one);
@@ -21,7 +21,7 @@ function hero() {
   return (
     <div className="w-full h-1/3 md:h-1/2 flex justify-evenly items-center">
       <div className="w-full h-full md:w-1/3 flex flex-col justify-center items-center">
-        <div className="w-fit text-2xl md:w-fit h-fit text-center font-anton 2xl:text-4xl xl:text-3xl lg:text-2xl md:text-xl sm:text-lg">
+        <div className="w-fit text-2xl md:w-fit h-fit text-center font-anton 2xl:text-4xl xl:text-3xl lg:text-2xl md:text-xl">
           <h1>Your One-Stop Shop for Premium</h1>
           <h1>Football Jerseys and Boots</h1>
         </div>
@@ -38,11 +38,11 @@ function hero() {
         </div>
       </div>
       <div className="hidden w-1/3 h-full md:flex flex-col justify-between items-center">
-        <div className="w-full h-5/6">
+        <div className="w-full h-[95%]">
           <img src={current} alt="SlideShow Image" className="w-full h-full rounded-2xl object-cover"/>
         </div>
 
-        <div className="flex justify-evenly items-center w-1/2 h-1/6">
+        <div className="flex justify-evenly items-center w-1/2 h-[5%]">
           <div
             className={`w-[10px] h-[10px] rounded-full cursor-pointer ${current === one ? "bg-black" : "bg-gray-500"}`}
             onClick={() => setCurrent(one)}
