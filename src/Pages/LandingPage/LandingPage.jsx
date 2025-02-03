@@ -9,17 +9,17 @@ import HeaderDesktop from "../../Components/Header/HeaderDesktop";
 
 function LandingPage() {
   const [width, setWidth] = useState(window.innerWidth);
-  useEffect(()=>{
+  useEffect(() => {
     window.addEventListener("resize", () => {
       setWidth(window.innerWidth);
-    })
-  },[width])
+    });
+  }, [width]);
 
-  
   return (
-    <>
+    <div className="w-full h-screen">
       {width < 768 ? <HeaderMobile /> : <HeaderDesktop />}
-    </>
+      <Hero />
+    </div>
   );
 }
 

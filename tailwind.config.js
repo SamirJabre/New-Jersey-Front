@@ -7,10 +7,10 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        inter : ["Inter", "sans-serif"],
+        inter: ["Inter", "sans-serif"],
+        anton: ["Anton", "sans-serif"],
       },
     },
   },
   plugins: [],
 }
-
