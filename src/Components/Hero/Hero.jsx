@@ -2,7 +2,6 @@ import React, { useEffect, useState } from "react";
 import one from "../../Assets/1.jpg";
 import two from "../../Assets/2.jpg";
 import three from "../../Assets/3.png";
-import "./Hero.css";
 
 function hero() {
   const [current, setCurrent] = useState(one);

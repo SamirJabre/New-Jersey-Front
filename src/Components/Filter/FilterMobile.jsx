@@ -1,7 +1,7 @@
   import React, { useEffect, useState } from "react";
   import dropdown from "../../assets/icons/dropdown.svg";
 
-  function Filter() {
+  function FilterMobile() {
     const [showDropdown, setShowDropdown] = useState(false);
     const [price, setPrice] = useState(50);
 
@@ -51,4 +51,4 @@
     );
   }
 
-  export default Filter;
+  export default FilterMobile;

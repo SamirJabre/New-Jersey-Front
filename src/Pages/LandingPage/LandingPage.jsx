@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import Hero from "../../Components/Hero/Hero";
-import Filter from "../../Components/Filter/Filter";
+import FilterMobile from "../../Components/Filter/FilterMobile";
+import FilterDesktop from "../../Components/Filter/FilterDesktop";
 import Product from "../../Components/Product/Product";
 import Footer from "../../Components/Footer/Footer";
 import Login from "../../Components/Login/Login";
@@ -19,7 +20,7 @@ function LandingPage() {
     <div className="w-full h-screen flex flex-col items-center justify-start">
       {width < 768 ? <HeaderMobile /> : <HeaderDesktop />}
       <Hero />
-      <Filter />
+      {width < 768 ? <FilterMobile /> : <FilterDesktop />}
     </div>
   );
 }
