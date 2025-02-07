@@ -11,7 +11,7 @@ function FilterMobile() {
   const [price, setPrice] = useState(50);
 
   return (
-    <div className="w-[90%] h-12 rounded-xl flex justify-between items-center border border-[#b1b1b1] px-8 font-inter text-sm">
+    <div className="w-[90%] h-12 rounded-xl flex justify-between items-center border border-[#b1b1b1] px-8 font-inter text-sm my-5">
       <div className="h-full w-fit flex">
         <div className="relative h-full flex flex-col justify-between items-center select-none">
           <div
@@ -109,7 +109,7 @@ function FilterMobile() {
               showColor
                 ? "opacity-100 transform transition-opacity duration-300"
                 : "opacity-0 pointer-events-none"
-            } absolute top-[110%] h-fit w-36 grid gap-2 items-center justify-center bg-white border rounded-lg border-[#b1b1b1] p-2 z-50`}
+            } absolute top-[110%] h-64 w-40 overflow-x-auto overflow-y-auto grid gap-2 items-start justify-between bg-white border rounded-lg border-[#b1b1b1] p-2 z-50`}
           >
             <CheckBox size="White" />
             <CheckBox size="Black" />
@@ -118,12 +118,12 @@ function FilterMobile() {
             <CheckBox size="Green" />
             <CheckBox size="Yellow" />
             <CheckBox size="Yellow & Black" />
+            <CheckBox size="Yellow & Blue" />
             <CheckBox size="Red & Black" />
             <CheckBox size="Blue & Black" />
             <CheckBox size="Pink" />
             <CheckBox size="Pink & Black" />
-            <CheckBox size="Yellow & Blue" />
-            <CheckBox size="Gray" />
+
           </div>
           {showColor && (
             <div
@@ -132,7 +132,7 @@ function FilterMobile() {
             ></div>
           )}
         </div>
-
+        {/* 
         <div className="relative h-full flex flex-col justify-between items-center select-none mx-5">
           <div
             className="h-full w-fit flex justify-between items-center cursor-pointer"
@@ -187,7 +187,7 @@ function FilterMobile() {
               onClick={() => setSortBy(false)}
             ></div>
           )}
-        </div>
+        </div> */}
       </div>
 
       <button className="font-inter text-base">Clear Filters</button>

@@ -1,24 +1,29 @@
-import React from 'react'
-import './Card.css'
+import React from "react";
+import "./Card.css";
 
 function Card() {
   return (
-    <div className="card_container">
-
-        <div className="product_image_container">
-        <img src="https://cdn.shopify.com/s/files/1/0615/4456/2874/products/4065415579257_1.jpg?v=1665067107" alt="Men Germany 24 Away Jersey, Pink" className="product-image"/>
+    <div className="w-80 h-fit border border-[#b1b1b1] rounded-lg flex flex-col items-center justify-between mb-5">
+      <div className="w-full h-72">
+        <img
+          src="https://cdn.shopify.com/s/files/1/0615/4456/2874/products/4065415579257_1.jpg?v=1665067107"
+          alt="Men Germany 24 Away Jersey, Pink"
+          className="h-full w-full object-contain"
+        />
+      </div>
+      <div className="w-full h-32 flex flex-col justify-between items-start p-2">
+        <p className="font-inter text-base font-semibold">
+          Men Germany 24 Away Jersey Men Germany 24 Away Jersey
+        </p>
+        <div className="w-full flex justify-between items-end">
+          <p className="font-inter text-sm ">
+            Price: <span className="font-semibold">$40</span>
+          </p>
+          <button className="bg-black p-2 rounded-lg text-sm font-inter text-white">View Details</button>
         </div>
-
-
-        <div className="card_content">
-            <h3 className="product_title">Men Germany 24 Away Jersey, Pink</h3>
-            <div className="price_details">
-                <p className="product_price">Price: <span>$40</span></p>
-            <button className="add_to_cart_btn">View Details</button>
-            </div>
-        </div>
+      </div>
     </div>
-  )
+  );
 }
 
-export default Card
+export default Card;

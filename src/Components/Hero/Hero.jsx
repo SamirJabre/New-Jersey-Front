@@ -18,7 +18,7 @@ function hero() {
   }, []);
 
   return (
-    <div className="w-full h-1/3 md:h-1/2 flex justify-evenly items-center">
+    <div className="w-full h-56 md:h-96 flex justify-evenly items-center">
       <div className="w-full h-full md:w-1/3 flex flex-col justify-center items-center">
         <div className="w-fit text-2xl md:w-fit h-fit text-center font-anton 2xl:text-4xl xl:text-3xl lg:text-2xl md:text-xl">
           <h1>Your One-Stop Shop for Premium</h1>

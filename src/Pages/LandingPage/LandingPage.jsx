@@ -17,10 +17,11 @@ function LandingPage() {
   }, [width]);
 
   return (
-    <div className="w-full h-screen flex flex-col items-center justify-start">
+    <div className="w-screen h-fit flex flex-col items-center justify-start">
       {width < 768 ? <HeaderMobile /> : <HeaderDesktop />}
       <Hero />
       {width < 768 ? <FilterMobile /> : <FilterDesktop />}
+      <Product />
     </div>
   );
 }

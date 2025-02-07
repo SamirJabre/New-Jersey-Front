@@ -6,7 +6,7 @@
     const [price, setPrice] = useState(50);
 
     return (
-      <div className="w-[90%] h-10 rounded-xl flex justify-between items-center border border-[#b1b1b1] px-2 font-inter text-sm">
+      <div className="w-[90%] h-10 rounded-xl flex justify-between items-center border border-[#b1b1b1] px-2 font-inter text-sm my-5">
         <select className="h-full w-fit select-none outline-none bg-transparent">
           <option defaultChecked={true}>Size</option>
           <option>XS</option>
@@ -28,7 +28,7 @@
           </div>
 
           {showDropdown && (
-            <div className="absolute top-[105%] w-fit h-14 border rounded-2xl border-[#b1b1b1] flex px-2 justify-center items-center">
+            <div className="absolute top-[105%] bg-white w-fit h-14 border rounded-2xl border-[#b1b1b1] flex px-2 justify-center items-center">
               <label>0$</label>
               <input type="range" defaultValue={50} onChange={(e)=>setPrice(e.target.value)} className="mx-2 "/>
               <label>{price}$</label>
