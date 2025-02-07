@@ -132,7 +132,7 @@ function FilterMobile() {
             ></div>
           )}
         </div>
-        {/* 
+        
         <div className="relative h-full flex flex-col justify-between items-center select-none mx-5">
           <div
             className="h-full w-fit flex justify-between items-center cursor-pointer"
@@ -187,7 +187,7 @@ function FilterMobile() {
               onClick={() => setSortBy(false)}
             ></div>
           )}
-        </div> */}
+        </div>
       </div>
 
       <button className="font-inter text-base">Clear Filters</button>
