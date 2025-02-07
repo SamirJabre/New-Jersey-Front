@@ -1,5 +1,4 @@
 import React from "react";
-import "./Card.css";
 
 function Card() {
   return (
@@ -19,7 +18,7 @@ function Card() {
           <p className="font-inter text-sm ">
             Price: <span className="font-semibold">$40</span>
           </p>
-          <button className="bg-black p-2 rounded-lg text-sm font-inter text-white">View Details</button>
+          <button className="bg-black h-10 w-24 text-center rounded-lg text-sm font-inter text-white hover:border hover:border-black hover:text-black hover:bg-white transition-colors duration-300">View Details</button>
         </div>
       </div>
     </div>
