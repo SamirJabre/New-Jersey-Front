@@ -1,62 +1,33 @@
-import React from 'react'
-import './Footer.css'
-import logo_white from '../../Assets/logo_white.png'
-import facebook from '../../Assets/icons/facebook.png'
-import instagram from '../../Assets/icons/instagram.png'
-import x from '../../Assets/icons/x.png'
-import youtube from '../../Assets/icons/youtube.png'
+import React from "react";
+import "./Footer.css";
+import logo_white from "../../Assets/logo_white.png";
+import facebook from "../../Assets/icons/facebook.png";
+import instagram from "../../Assets/icons/instagram.png";
+import x from "../../Assets/icons/x.png";
+import youtube from "../../Assets/icons/youtube.png";
 
 function Footer() {
   return (
-    <div className='footer_container'>
-
-      <div className="footer_top">
-        <div><img id='footer_logo' src={logo_white} alt="Website Logo" /></div>
-
-        <div>
-          <ul>
-            <li>WEEKLY THEMES</li>
-            <li>PRE-SALE</li>
-            <li>SUBMIT A TICKET</li>
-          </ul>
+    <footer className="w-full h-fit bg-[#101010] flex flex-col items-center justify-between py-5">
+      <div className="w-full h-60 flex flex-col justify-between items-center">
+        <div className=" w-full h-[40%]">
+          <img src={logo_white} alt="Website Logo" className="w-full h-full object-contain"/>
         </div>
-
-        <div>
-          <ul>
-            <li>SERVICES</li>
-            <li>FIND US</li>
-            <li>ABOUT</li>
-          </ul>
-        </div>
-
-        <div>
-          <ul>
-            <li>SUPPORT</li>
-            <li>CONTACT US</li>
-            <li>CHUPAPI</li>
-          </ul>
+        <p className="text-white font-inter text-xs text-center">Lebanon, Tripoli, Al-Mina, Next To OMT, 961 3 330 550</p>
+        <a href="#" className="text-blue-600 text-xs font-inter">Call us at +961 81 165 027</a>
+        <div className="flex justify-between w-2/3 h-fit items-center">
+          <a href="#"><img src={facebook} alt="" className="scale-75"/></a>
+          <a href="#"><img src={instagram} alt="" className="scale-75"/></a>
+          <a href="#"><img src={x} alt="" className="scale-75"/></a>
+          <a href="#"><img src={youtube} alt="" className="scale-75"/></a>
         </div>
       </div>
+      <hr className="w-full h-1 m-5" style={{borderColor:'gray'}}/>
 
-      <div className="footer_middle"></div>
 
-      <div className="footer_bottom">
-
-        <div className="footer_logos">
-          <div><img src={facebook} alt="Facebook Icon" /></div>
-          <div><img src={instagram} alt="Instagram Icon" /></div>
-          <div><img src={x} alt="X Icon" /></div>
-          <div><img src={youtube} alt="Youtube Icon" /></div>
-        </div>
-
-        <div className="copywrite_text">
-          <p>&copy;2024 Copywrite, All rights reserved.</p>
-        </div>
-      </div>
       
-    </div>
-  )
+    </footer>
+  );
 }
 
-
-export default Footer
+export default Footer;
