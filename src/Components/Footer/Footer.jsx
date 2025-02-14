@@ -63,6 +63,11 @@ function Footer() {
           </ul>
         </div>
       </div>
+      <div className="border-y border-gray-500 w-full py-4 flex justify-center items-center">
+        <p className="text-white font-inter text-sm font-light">
+          &copy;2024 Copywrite, All rights reserved.
+        </p>
+      </div>
     </footer>
   );
 }
