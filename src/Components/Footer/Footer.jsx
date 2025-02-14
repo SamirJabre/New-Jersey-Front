@@ -59,7 +59,7 @@ function Footer() {
           <ul className="font-inter text-sm font-light text-gray-300 flex flex-col items-start justify-between h-full">
             <li>Support</li>
             <li>Contact Us</li>
-            <li>Chupapi Munianioo</li>
+            <li>Our Story</li>
           </ul>
         </div>
       </div>
