@@ -1,5 +1,4 @@
 import React from "react";
-import "./Footer.css";
 import logo_white from "../../Assets/logo_white.png";
 import facebook from "../../Assets/icons/facebook.png";
 import instagram from "../../Assets/icons/instagram.png";
@@ -38,7 +37,10 @@ function Footer() {
           </a>
         </div>
       </div>
-      <hr className="w-full h-1 m-5 sm:hidden " style={{ borderColor: "gray" }} />
+      <hr
+        className="w-full h-1 m-5 sm:hidden "
+        style={{ borderColor: "gray" }}
+      />
 
       <div className="h-fit w-full sm:w-1/2 px-5 flex flex-wrap justify-between items-center">
         <div className="w-1/3 sm:w-fit h-20 mb-8">
@@ -62,12 +64,10 @@ function Footer() {
             <li>Our Story</li>
           </ul>
         </div>
-      </div>
-      {/* <div className="border-y border-gray-500 w-full py-4 flex justify-center items-center">
-        <p className="text-white font-inter text-sm font-light">
+        <p className="w-full text-center sm:mt-10 text-white font-inter text-sm font-light">
           &copy;2024 Copywrite, All rights reserved.
         </p>
-      </div> */}
+      </div>
     </footer>
   );
 }
