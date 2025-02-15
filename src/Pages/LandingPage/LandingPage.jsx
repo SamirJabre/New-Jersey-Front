@@ -23,6 +23,7 @@ function LandingPage() {
       {width < 768 ? <FilterMobile /> : <FilterDesktop />}
       <Product />
       <Footer />
+      <Login />
     </div>
   );
 }
