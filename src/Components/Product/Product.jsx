@@ -1,5 +1,4 @@
 import React from 'react'
-import './Product.css'
 import Card from '../Product_Card/Card'
 
 function Product() {

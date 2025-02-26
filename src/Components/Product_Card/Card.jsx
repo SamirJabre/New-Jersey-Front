@@ -6,8 +6,9 @@ function Card() {
       <div className="w-full h-72">
         <img
           src="https://cdn.shopify.com/s/files/1/0615/4456/2874/products/4065415579257_1.jpg?v=1665067107"
-          alt="Men Germany 24 Away Jersey, Pink"
+          alt="Men Germany 24 Away Jersey"
           className="h-full w-full object-contain"
+          loading="lazy"
         />
       </div>
       <div className="w-full h-32 flex flex-col justify-between items-start p-2">
